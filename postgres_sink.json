@@ -1,0 +1,12 @@
+{
+  "name": "PostgresSink_Grafana",
+  "config": {
+    "name": "PostgresSink_Grafana",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "topics": "accelerometer_updates, gyroscope_updates, location_updates, sensor_orientation",
+    "connection.url": "jdbc:postgresql://postgres:5432/postgres",
+    "connection.user": "postgres",
+    "connection.password": "********",
+    "auto.create": "true"
+  }
+}
